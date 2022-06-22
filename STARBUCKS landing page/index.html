@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <section>
+
+        <div class="circle"></div>
+
+        <header>
+            <a href="./index.html"><img class="logo" src="./imgs/logo.png" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>
+                    Coffee is one of the most popular drinks in the world. 
+                    It is slightly acidic and can have a stimulating effect on humans because of its caffeine content. 
+                    It can be prepared and presented in a variety of ways.
+                    <!--The effect of coffee on human health has been a subject of many studies;
+                    however, results have varied in terms of coffee's relative benefit. 
+                    The majority of recent research suggests that moderate coffee consumption is benign or mildly beneficial in healthy adults.-->
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="./imgs/img1.png" class="starbucks" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./imgs/thumb1.png" onclick="imgSlider('imgs/img1.png');changeColor('#017143')" alt=""></li>
+            <li><img src="./imgs/thumb2.png" onclick="imgSlider('imgs/img2.png');changeColor('#eb7495')" alt=""></li>
+            <li><img src="./imgs/thumb3.png" onclick="imgSlider('imgs/img3.png');changeColor('#d752b1')" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./imgs/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./imgs/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./imgs/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

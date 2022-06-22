@@ -1,0 +1,146 @@
+//font
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+section{
+    background-color: #fff;
+    position: relative;
+    max-height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            position: relative;
+            max-width: 80px;
+        }
+        ul{
+            display: flex;
+            position: relative;
+            li{
+                list-style: none;
+                a{
+                    display: inline-block;
+                    font-weight: 700;
+                    color: #333;
+                    margin-left: 40px;
+                    &:hover{
+                        color: #017143;
+                        transition: all .3s ease;
+                    }
+                }
+            }
+        }
+    }
+    .content{
+        position: relative;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .textBox{
+            position: relative;
+            max-width: 600px;
+            h2{
+                color: #333;
+                font-size: 3em;
+                line-height: 1.4em;
+                font-weight: 700;
+                span{
+                    color: #017143;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                }
+            }
+            p{
+                color: #333;
+            }
+            a{
+                background-color: #017143;
+                display: inline-block;
+                margin-top: 20px;
+                padding: 8px 20px;
+                color: #fff;
+                border-radius: 15px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                //box-shadow: 5px 5px 10px rgba(27, 27, 27, 0.377);
+            }
+        }
+        .imgBox{
+            width: 600px;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 40px;
+            margin-top: 40px;
+            img{
+                max-width: 300px;
+            }
+        }
+    }
+    .thumb{
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        display: flex;
+        li{
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: .5s;
+            &:hover{
+                transform: translateY(-15px);
+            }
+            img{
+                max-width: 60px;
+            }
+        }
+    }
+    .sci{
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li{
+            list-style: none;
+            a{
+                display: inline-block;
+                margin: 5px 0;
+                transform: scale(0.6);
+                filter: invert(1);
+            }
+        }
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #017143;
+        clip-path: circle(600px at right 700px);
+    }
+}
